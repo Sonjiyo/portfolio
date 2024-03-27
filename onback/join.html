@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/join.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <header id="header">
+        <a href="s_index.html"><img src="img/join/header.logo.png" alt="logo"></a>
+    </header>
+    <!-- e.header -->
+
+    <section id="section1">
+        <article class="section1_information">
+            <form action="/action_page.php" method="get" class="form">
+                <fieldset>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="id" placeholder="아이디" class="id"> <br>
+                            <span class="id_alert"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="pw" placeholder="비밀번호" class="pw1"> <br>
+                            <span class="pw1_alert"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="pw" placeholder="비밀번호 확인" class="pw2"> <br>
+                            <span class="pw2_alert"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="email" placeholder="이메일" class="email"> <br>
+                            <span class="email_alert"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="name" placeholder="이름" class="name"> <br>
+                            <span class="name_alert"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="birthday" placeholder="생년월일" class="day">
+                            <a href="#" class="men">남</a>
+                            <a href="#" class="women">여</a> <br>
+                            <span class="day_alert"></span>
+                        </td>
+                    </tr>
+                </table>
+                </fieldset>
+            </form>
+        </article>
+        <article class="section1_check">
+            <div class="agree">
+                <input type="checkbox" name="check" id="check"><label for="check"></label>
+                <span>선택 포함 전체 약관 동의</span>
+                <ul>
+                    <li><input type="checkbox" name="check" id="check1" class="each"><label for="check1"></label>이용약관 동의(필수)</li>
+                    <li><input type="checkbox" name="check" id="check2" class="each"><label for="check2"></label>개인 정보 수집 및 이용(필수)</li>
+                    <li><input type="checkbox" name="check" id="check3" class="each"><label for="check3"></label>성별,생년 정보 제공 동의(선택)</li>
+                    <li><input type="checkbox" name="check" id="check4" class="each"><label for="check4"></label>이벤트,혜택알람 수신 동의(선택)</li>
+                </ul>
+            </div>
+        </article>
+        <article class="section1_btn">
+            <button class="join">회원가입</button>
+            <button class="cancle">취소</button>
+        </article>
+    </section>
+    <!-- e.section1 -->
+</body>
+</html>

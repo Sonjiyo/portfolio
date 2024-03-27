@@ -1,0 +1,70 @@
+@import "reset";
+@import "root";
+@import "mixin";
+@import "color";
+@import "font";
+@import "s_header";
+@import "footer";
+
+#section1{
+    width: $main_width;
+    margin: 7% 0 25% 17%;
+    text-align: center;
+    p{
+        font-size: $mainSettitle38;
+        margin-bottom: 3%;
+    }
+    .section1_box{
+        width: 100%;
+        height: 395px;
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #aeaaaa;
+        img{
+            padding-top: 7%;
+        }
+        p{
+            padding-top: 5%;
+            font-size: $setStrong25;
+            color: #747272;
+        }
+    }
+    .section1_btn{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        margin-left: -231px;
+        width: 462px;
+        height: 46px;
+        .select, .all{
+            display: inline-block;
+            width: 173px;
+            height: 46px;
+            background: $onBack2;
+            color: $white;
+            line-height: 46px;
+        }
+    }
+}
+
+@media screen and (max-width:640px){
+    #section1{
+        width: 90%;
+        margin: 7% 0 25% 5%;
+        .section1_box{
+            img{
+                padding-top: 30%;
+            }
+        }
+        .section1_btn{
+            top: 78%;
+            left: 5%;
+            margin-left: 0px;
+            width: 90%;
+            .select, .all{
+                width: 150px;
+            }
+        }
+    }
+}

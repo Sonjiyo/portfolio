@@ -1,0 +1,67 @@
+:root{
+    /* space */
+    --main_width:65%;
+    --mp30:30px;
+    --mp50:50px;
+    --set_margin:100px;
+    --set_margin11:115px;
+    --set_margin15:150px;
+    --set_margin20:200px;
+    --h_margin:30px;
+    --subH_margin:10px;
+    
+
+    /* colors */
+    --font-color:#444;
+    --main_color:#FFF1E9;
+    --point_color:#ff585c;
+    --main_txt_color:#ff7a58;
+    --sub_color:#7b7b7b;
+    --bg_color:#cccccc;
+    --border_color:#515151;
+    
+    /* font size */
+    --main_tit_txt48: 4.5rem;
+    --main_sub_txt20: 1.25rem;
+    --main_basic_txt30: 1.875rem;
+    --main_set_tit_txt38: 3rem;
+    --main_set_sub_txt28: 1.75rem;
+    --set_title_txt28: 1.75rem;
+    --set_txt16: 1rem;
+    --set_strong_txt25: 1.563rem;
+    --foo_tit_txt38: 2.375rem;
+    --foo_txt38: 2.375rem;
+    --foo_basic_txt14: 0.875rem;
+
+    /* line height */
+    --main_tit_lh50: 3.125rem;
+    --main_sub_lh23: 3rem;
+    --main_basic_lh35: 2.188rem;
+    --main_set_tit_lh40: 2.5rem;
+    --main_set_sub_lh30: 1.875rem;
+    --set_title_lh40: 2.5rem;
+    --set_lh30: 1.875rem;
+    --set_strong_lh35: 2.188rem;
+    --foo_tit_lh40: 2.5rem;
+    --foo_lh32: 2rem;
+    --foo_basic_lh23: 1.438rem;
+
+    /* button*/
+    --bt1_radius:42px;
+    --bt1_bg: rgba(0, 0, 0, .3); 
+    --bt1_color: rgba(255, 255, 255, .9);
+    --bt1_hov_bg:#fff;
+    --bt1_hov_color: rgba(0, 0, 0, .3);
+    
+    --bt2_radius:3px;
+    --bt2_bg: #ff7a58;
+    --bt2_color: #fff;
+    --bt2_hov_bg: #fff;
+    --bt2_hov_color: #ff7a58;
+
+    --bt3_radius:27px;
+    --bt2_bg: #ff585c;
+    --bt2_color: #fff;
+    --bt2_hov_bg: #fff;
+    --bt2_hov_color: #ff585c;
+}

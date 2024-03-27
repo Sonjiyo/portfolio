@@ -1,0 +1,992 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+/* reset.css */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img, fieldset {
+  border: 0px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+address, em {
+  font-style: normal; }
+
+li img, object {
+  vertical-align: top; }
+
+input, select, textarea {
+  vertical-align: middle; }
+
+a {
+  outline: 0;
+  text-decoration: none;
+  border: none;
+  color: #444; }
+
+body {
+  font-size: 16px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #444; }
+
+.noMargin {
+  margin: 0px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block; }
+
+.floatClear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+.blind {
+  display: block;
+  text-indent: -2000px;
+  overflow: hidden; }
+
+/* space */
+/* font size */
+/* line height */
+/* teamachine */
+/* 16px base */
+/* line hieght */
+/* onback_cup */
+/* onback_detail */
+/* reset.css */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img, fieldset {
+  border: 0px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+address, em {
+  font-style: normal; }
+
+li img, object {
+  vertical-align: top; }
+
+input, select, textarea {
+  vertical-align: middle; }
+
+a {
+  outline: 0;
+  text-decoration: none;
+  border: none;
+  color: #444; }
+
+body {
+  font-size: 16px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #444; }
+
+.noMargin {
+  margin: 0px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block; }
+
+.floatClear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+.blind {
+  display: block;
+  text-indent: -2000px;
+  overflow: hidden; }
+
+/* space */
+/* teamachine */
+/* 16px base */
+/* line hieght */
+/* onback_cup */
+/* onback_detail */
+/* font size */
+/* line height */
+#header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 65%;
+  margin-top: 1%;
+  margin-left: 17%;
+  margin-bottom: 1%;
+  font-family: "NanumSquare_acR"; }
+  #header .logo {
+    width: 144px; }
+  #header .nav {
+    width: 61%; }
+    #header .nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin: 0 auto;
+      align-items: center;
+      font-size: 1.125rem; }
+      #header .nav ul li {
+        margin-right: 1%; }
+        #header .nav ul li:hover a {
+          color: #ff7a58; }
+        #header .nav ul li .brand {
+          display: inline-block;
+          width: 131px;
+          height: 32px;
+          padding-left: 10%;
+          border: 1px solid #ff585c;
+          border-radius: 15px;
+          background: url(../img/common/header_shop_hover.png) no-repeat 93% 55%;
+          font-size: 16px;
+          color: #ff585c;
+          line-height: 32px; }
+          #header .nav ul li .brand:hover {
+            background: url(../img/common/header_shop.png) no-repeat 93% 55% #ff7a58;
+            border: 0;
+            color: #fff; }
+  #header .icon {
+    width: 8%; }
+    #header .icon ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+  #header .menu_bar {
+    width: 20px;
+    height: 20px;
+    display: none;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    cursor: pointer; }
+    #header .menu_bar .top {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background: #000; }
+    #header .menu_bar .middle1, #header .menu_bar .middle2, #header .menu_bar .middle3 {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background: #000;
+      transition: all 1s; }
+    #header .menu_bar .middle1.on {
+      transform: rotate(45deg) scale(1.5); }
+    #header .menu_bar .middle3.on {
+      transform: rotate(-45deg) scale(1.5); }
+    #header .menu_bar .bottom {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background: #000; }
+
+@media screen and (max-width: 640px) {
+  #header {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%; }
+    #header .logo img {
+      width: 144px; }
+    #header .nav {
+      width: 0;
+      overflow: hidden;
+      display: block;
+      position: absolute;
+      top: 150%;
+      right: 0px;
+      z-index: 100;
+      height: 71vh;
+      padding-top: 10%;
+      background: #FFF1E9; }
+      #header .nav ul {
+        flex-direction: column;
+        width: 85%; }
+        #header .nav ul li {
+          margin-right: 0%;
+          margin-bottom: 20%; }
+    #header .menu_bar {
+      display: block;
+      position: absolute;
+      top: 55%;
+      right: 0%;
+      z-index: 10; }
+      #header .menu_bar .top {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background: #000; }
+      #header .menu_bar .middle1, #header .menu_bar .middle2, #header .menu_bar .middle3 {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background: #000; }
+      #header .menu_bar .bottom {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        background: #000; }
+    #header .icon {
+      margin-right: 25px;
+      width: 17%; } }
+/* reset.css */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img, fieldset {
+  border: 0px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+address, em {
+  font-style: normal; }
+
+li img, object {
+  vertical-align: top; }
+
+input, select, textarea {
+  vertical-align: middle; }
+
+a {
+  outline: 0;
+  text-decoration: none;
+  border: none;
+  color: #444; }
+
+body {
+  font-size: 16px;
+  font-family: 'NanumSquare', sans-serif;
+  color: #444; }
+
+.noMargin {
+  margin: 0px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block; }
+
+.floatClear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+.blind {
+  display: block;
+  text-indent: -2000px;
+  overflow: hidden; }
+
+/* space */
+/* teamachine */
+/* 16px base */
+/* line hieght */
+/* onback_cup */
+/* onback_detail */
+/* font size */
+/* line height */
+#footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding: 30px 0; }
+  #footer .footer_wrap {
+    display: flex;
+    width: 65%;
+    margin: 0 auto; }
+    #footer .footer_wrap img {
+      width: 81px;
+      height: 114px; }
+    #footer .footer_wrap .footer_box1 {
+      margin-left: 69px;
+      margin-right: 92px; }
+      #footer .footer_wrap .footer_box1 p {
+        font-size: 1.0625rem;
+        color: #444; }
+      #footer .footer_wrap .footer_box1 h1 {
+        font-size: 2.375rem;
+        color: #444;
+        font-weight: bold;
+        margin-bottom: 19px; }
+      #footer .footer_wrap .footer_box1 .box1_ul {
+        font-size: 1.0625rem;
+        color: #444;
+        line-height: 1.59375rem; }
+        #footer .footer_wrap .footer_box1 .box1_ul li span {
+          display: inline-block;
+          padding-left: 20px; }
+        #footer .footer_wrap .footer_box1 .box1_ul li .gray {
+          color: #b3b3b3;
+          padding-left: 0; }
+    #footer .footer_wrap .footer_box2 .box2_ul1 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.125rem;
+      color: #444;
+      font-weight: bold;
+      margin-bottom: 30px; }
+    #footer .footer_wrap .footer_box2 .box2_ul2 {
+      font-size: 1.0625rem;
+      color: #444;
+      line-height: 1.859375rem; }
+
+@media screen and (min-width: 414px) and (max-width: 736px) {
+  #footer .footer_wrap {
+    width: 90%;
+    flex-direction: column; }
+    #footer .footer_wrap img {
+      display: none; }
+    #footer .footer_wrap .footer_box1 {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center; }
+    #footer .footer_wrap .footer_box2 {
+      width: 100%;
+      text-align: center; }
+      #footer .footer_wrap .footer_box2 .box2_ul1 {
+        font-size: 0.9375rem;
+        color: #444; }
+      #footer .footer_wrap .footer_box2 .box2_ul2 {
+        font-size: 0.9375rem;
+        color: #444; } }
+#section1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  background: url("../img/teamachine/section1_banner_bg.png") 0 0 no-repeat; }
+  #section1 p {
+    position: absolute;
+    top: 14%;
+    bottom: none;
+    left: 25%;
+    right: none;
+    font-size: 4.625rem;
+    color: #fff;
+    line-height: 5.78125rem;
+    opacity: 0;
+    z-index: 20; }
+  #section1 img {
+    position: absolute;
+    top: none;
+    bottom: none;
+    left: none;
+    right: 10%;
+    z-index: 10; }
+
+/* e.section1 */
+#section2 {
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+  /* e.section2_img*/
+  /* e.section2_text*/ }
+  #section2 .section2_img {
+    position: relative;
+    width: 800px;
+    height: 460px;
+    margin: 0 auto;
+    text-align: center; }
+    #section2 .section2_img .size1 {
+      position: absolute;
+      top: 2px;
+      bottom: none;
+      left: none;
+      right: -50px;
+      opacity: 0; }
+    #section2 .section2_img .size2 {
+      position: absolute;
+      top: none;
+      bottom: -50px;
+      left: 90px;
+      right: none;
+      opacity: 0; }
+  #section2 .section2_text {
+    position: relative;
+    width: 100%;
+    margin-top: 300px;
+    opacity: 0; }
+    #section2 .section2_text ul {
+      width: 436px;
+      height: 270px;
+      margin: 0 auto; }
+      #section2 .section2_text ul li {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 40px;
+        font-size: 1.25rem;
+        color: #444;
+        border-bottom: 1px solid #707070; }
+        #section2 .section2_text ul li span {
+          width: 218px;
+          float: right;
+          padding-left: 40px;
+          color: #b3b3b3; }
+
+/* e.section2 */
+#section3 {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 300px;
+  /* e.section3_box1 */
+  /* e.section3_box2 */
+  /* e.section3_box3 */
+  /* e.section3_box4 */ }
+  #section3 .section3_box1 {
+    position: relative;
+    top: none;
+    bottom: none;
+    left: 50%;
+    right: none;
+    width: 900px;
+    height: 800px;
+    margin-left: -300px;
+    background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat; }
+    #section3 .section3_box1 .water1 {
+      position: absolute;
+      top: none;
+      bottom: 94px;
+      left: none;
+      right: none;
+      z-index: 990; }
+    #section3 .section3_box1 .water2 {
+      position: absolute;
+      top: none;
+      bottom: 120px;
+      left: 142px;
+      right: none;
+      z-index: 1000; }
+    #section3 .section3_box1 .section3_text1 {
+      position: absolute;
+      top: none;
+      bottom: 200px;
+      left: none;
+      right: 0;
+      text-align: right;
+      opacity: 0; }
+      #section3 .section3_box1 .section3_text1 h1 {
+        margin-bottom: 10px;
+        font-size: 3.125rem;
+        color: #444; }
+      #section3 .section3_box1 .section3_text1 p {
+        font-size: 2.1875rem;
+        color: #444; }
+  #section3 .section3_box2 {
+    position: relative;
+    top: -147px;
+    bottom: none;
+    left: 50%;
+    right: none;
+    margin-left: -600px;
+    width: 900px;
+    height: 800px;
+    background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+    z-index: 980; }
+    #section3 .section3_box2 .capbox1 {
+      position: absolute;
+      top: none;
+      bottom: 112px;
+      left: none;
+      right: 0; }
+    #section3 .section3_box2 .capbox2 {
+      position: absolute;
+      top: none;
+      bottom: 0;
+      left: none;
+      right: 226px; }
+    #section3 .section3_box2 .section3_text2 {
+      position: absolute;
+      top: 212px;
+      bottom: none;
+      left: 0;
+      right: none;
+      opacity: 0; }
+      #section3 .section3_box2 .section3_text2 h1 {
+        margin-bottom: 10px;
+        font-size: 3.125rem;
+        color: #444; }
+      #section3 .section3_box2 .section3_text2 p {
+        font-size: 2.1875rem;
+        color: #444; }
+  #section3 .section3_box3 {
+    position: relative;
+    top: -289px;
+    bottom: none;
+    left: 50%;
+    right: none;
+    margin-left: -300px;
+    width: 900px;
+    height: 800px;
+    background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat; }
+    #section3 .section3_box3 .prop1 {
+      position: absolute;
+      top: none;
+      bottom: -59px;
+      left: none;
+      right: none;
+      z-index: 970; }
+    #section3 .section3_box3 .prop2 {
+      position: absolute;
+      top: none;
+      bottom: 0;
+      left: 153px;
+      right: none;
+      z-index: 970; }
+    #section3 .section3_box3 .section3_text3 {
+      position: absolute;
+      top: 200px;
+      bottom: none;
+      left: none;
+      right: 146px;
+      text-align: right;
+      opacity: 0; }
+      #section3 .section3_box3 .section3_text3 h1 {
+        margin-bottom: 10px;
+        font-size: 3.125rem;
+        color: #444; }
+      #section3 .section3_box3 .section3_text3 p {
+        font-size: 2.1875rem;
+        color: #444; }
+  #section3 .section3_box4 {
+    position: relative;
+    top: -403px;
+    bottom: none;
+    left: 50%;
+    right: none;
+    overflow: hidden;
+    margin-left: -600px;
+    width: 900px;
+    height: 800px;
+    background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+    z-index: 960; }
+    #section3 .section3_box4 .cover {
+      position: absolute;
+      top: none;
+      bottom: -100px;
+      left: none;
+      right: -100px;
+      transform: scale(0.8); }
+    #section3 .section3_box4 .cover.act2 {
+      overflow: hidden;
+      transform: scale(1);
+      transition: transform 2s ease-in-out; }
+    #section3 .section3_box4 .section3_text4 {
+      position: absolute;
+      top: 271px;
+      bottom: none;
+      left: 0;
+      right: none;
+      opacity: 0; }
+      #section3 .section3_box4 .section3_text4 h1 {
+        margin-bottom: 10px;
+        font-size: 3.125rem;
+        color: #444; }
+      #section3 .section3_box4 .section3_text4 p {
+        font-size: 2.1875rem;
+        color: #444; }
+
+/* e.section3 */
+#section4 {
+  width: 100%;
+  height: 467px;
+  margin-top: 300px; }
+  #section4 .section4_box {
+    position: relative;
+    width: 1200px;
+    height: 176px;
+    margin: 0 auto;
+    background: url("../img/teamachine/section4_bg.png") center no-repeat;
+    z-index: 900; }
+    #section4 .section4_box .capsuleSzie1 {
+      position: absolute;
+      top: none;
+      bottom: 300px;
+      left: 63px;
+      right: none; }
+    #section4 .section4_box .capsule1 {
+      position: absolute;
+      top: none;
+      bottom: 40px;
+      left: 167px;
+      right: none;
+      opacity: 0; }
+    #section4 .section4_box .capsule2 {
+      position: absolute;
+      top: 33px;
+      bottom: none;
+      left: none;
+      right: 167px;
+      opacity: 0; }
+    #section4 .section4_box .capsuleSzie2 {
+      position: absolute;
+      top: -22px;
+      bottom: none;
+      left: none;
+      right: 63px; }
+    #section4 .section4_box span {
+      position: absolute;
+      top: none;
+      bottom: -44px;
+      left: -100px;
+      right: none;
+      font-size: 1.25rem;
+      color: #b3b3b3;
+      opacity: 0; }
+    #section4 .section4_box .hidden {
+      display: none; }
+
+/* e.section4 */
+#section5 {
+  width: 100%;
+  margin-top: 450px;
+  margin-bottom: 300px; }
+  #section5 .section5_box {
+    position: relative;
+    width: 750px;
+    height: 458px;
+    margin: 0 auto;
+    border: 1px solid #ff585c; }
+    #section5 .section5_box .teaBox1 {
+      position: absolute;
+      top: -252px;
+      bottom: none;
+      left: -230px;
+      right: none;
+      opacity: 0; }
+    #section5 .section5_box span {
+      position: absolute;
+      top: 30px;
+      bottom: none;
+      left: none;
+      right: 30px;
+      font-size: 1.25rem;
+      color: #b3b3b3;
+      line-height: 1.875rem;
+      text-align: right; }
+    #section5 .section5_box .teaBox2 {
+      position: absolute;
+      top: none;
+      bottom: -104px;
+      left: none;
+      right: -120px;
+      opacity: 0; }
+
+@media screen and (min-width: 414px) and (max-width: 723px) {
+  #section1 p {
+    position: absolute;
+    top: 16%;
+    bottom: none;
+    left: 5%;
+    right: none;
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 3.125rem;
+    color: #444; }
+  #section1 img {
+    width: 70%;
+    position: absolute;
+    top: none;
+    bottom: 0;
+    left: none;
+    right: -1%; }
+
+  /* e.section1 */
+  #section2 {
+    margin: 0 auto;
+    margin-top: 150px; }
+    #section2 .section2_img {
+      width: 90%;
+      margin: 0 auto; }
+      #section2 .section2_img .teamachine {
+        width: 100%; }
+      #section2 .section2_img .size1 {
+        display: none; }
+      #section2 .section2_img .size2 {
+        display: none; }
+    #section2 .section2_text {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 50px; }
+      #section2 .section2_text ul {
+        width: 100%; }
+
+  /* e.section2*/
+  #section3 {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
+    /* e.section3_box1 */
+    /* e.section3_box2 */
+    /* e.section3_box3 */
+    /* e.section3_box4 */ }
+    #section3 .section3_box1 {
+      position: relative;
+      top: none;
+      bottom: none;
+      left: 0;
+      right: none;
+      width: 100%;
+      height: 600px;
+      margin-left: 0;
+      background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat; }
+      #section3 .section3_box1 .water1 {
+        width: 45%; }
+      #section3 .section3_box1 .water2 {
+        width: 20%; }
+      #section3 .section3_box1 .section3_text1 h1 {
+        margin-bottom: 10px;
+        font-size: 2.1875rem;
+        color: #444; }
+      #section3 .section3_box1 .section3_text1 p {
+        font-size: 1.25rem;
+        color: #444; }
+    #section3 .section3_box2 {
+      position: relative;
+      top: none;
+      bottom: none;
+      left: 0;
+      right: none;
+      width: 100%;
+      height: 600px;
+      margin-left: 0;
+      background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat; }
+      #section3 .section3_box2 .capbox1 {
+        width: 40%;
+        position: absolute;
+        top: none;
+        bottom: 70px;
+        left: none;
+        right: 0; }
+      #section3 .section3_box2 .capbox2 {
+        width: 40%;
+        position: absolute;
+        top: none;
+        bottom: 0;
+        left: none;
+        right: 150px; }
+      #section3 .section3_box2 .section3_text2 {
+        position: absolute;
+        top: 150px;
+        bottom: none;
+        left: 0;
+        right: none; }
+        #section3 .section3_box2 .section3_text2 h1 {
+          margin-bottom: 10px;
+          font-size: 2.1875rem;
+          color: #444; }
+        #section3 .section3_box2 .section3_text2 p {
+          font-size: 1.25rem;
+          color: #444; }
+    #section3 .section3_box3 {
+      position: relative;
+      top: none;
+      bottom: none;
+      left: 0;
+      right: none;
+      width: 100%;
+      height: 600px;
+      margin-left: 0;
+      background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat; }
+      #section3 .section3_box3 .prop1 {
+        width: 45%;
+        position: absolute;
+        top: none;
+        bottom: -40px;
+        left: none;
+        right: none;
+        z-index: 970; }
+      #section3 .section3_box3 .prop2 {
+        width: 20%;
+        position: absolute;
+        top: none;
+        bottom: 0;
+        left: 85px;
+        right: none;
+        z-index: 970; }
+      #section3 .section3_box3 .section3_text3 {
+        z-index: 1000; }
+        #section3 .section3_box3 .section3_text3 h1 {
+          margin-bottom: 10px;
+          font-size: 2.1875rem;
+          color: #444; }
+        #section3 .section3_box3 .section3_text3 p {
+          font-size: 1.25rem;
+          color: #444; }
+    #section3 .section3_box4 {
+      position: relative;
+      top: -289px;
+      bottom: none;
+      left: 0;
+      right: none;
+      width: 100%;
+      height: 600px;
+      margin-left: 0;
+      background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat; }
+      #section3 .section3_box4 .cover {
+        position: absolute;
+        top: none;
+        bottom: -150px;
+        left: none;
+        right: -150px;
+        transform: scale(0.8); }
+      #section3 .section3_box4 .cover.act2 {
+        overflow: hidden;
+        transform: scale(1);
+        transition: transform 2s ease-in-out; }
+      #section3 .section3_box4 .section3_text4 {
+        position: absolute;
+        top: 115px;
+        bottom: none;
+        left: 0;
+        right: none; }
+        #section3 .section3_box4 .section3_text4 h1 {
+          margin-bottom: 10px;
+          font-size: 2.1875rem;
+          color: #444; }
+        #section3 .section3_box4 .section3_text4 p {
+          font-size: 1.25rem;
+          color: #444; }
+
+  /* e.section3 */
+  #section4 {
+    margin-top: 100px; }
+    #section4 .section4_box {
+      width: 100%; }
+      #section4 .section4_box .capsuleSzie1 {
+        display: none; }
+      #section4 .section4_box .capsule1 {
+        position: absolute;
+        top: none;
+        bottom: 0;
+        left: 50%;
+        right: none;
+        margin-left: -217px;
+        opacity: 0; }
+      #section4 .section4_box .capsule2 {
+        display: none; }
+      #section4 .section4_box .capsuleSzie2 {
+        display: none; }
+      #section4 .section4_box span {
+        position: absolute;
+        top: none;
+        bottom: -44px;
+        left: -100px;
+        right: none;
+        padding-left: 20px;
+        font-size: 1.25rem;
+        color: #b3b3b3;
+        opacity: 0; }
+      #section4 .section4_box .hidden {
+        display: block; }
+
+  /* e.section4 */
+  #section5 {
+    margin-top: 200px;
+    margin-bottom: 200px; }
+    #section5 .section5_box {
+      width: 90%;
+      height: 458px; }
+      #section5 .section5_box .teaBox1 {
+        width: 280px;
+        position: absolute;
+        top: 150px;
+        bottom: none;
+        left: -230px;
+        right: none;
+        margin-left: 235px; }
+      #section5 .section5_box span {
+        position: absolute;
+        top: 30px;
+        bottom: none;
+        left: none;
+        right: 30px;
+        font-size: 1.25rem;
+        color: #b3b3b3;
+        line-height: 1.875rem;
+        text-align: right; }
+      #section5 .section5_box .teaBox2 {
+        display: none; }
+
+  /* e.section5 */ }
+
+/*# sourceMappingURL=teamachine.css.map */

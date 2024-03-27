@@ -1,0 +1,244 @@
+@import 'reset';
+@import 'root';
+@import 'font';
+@import 'mixin';
+@import 'color';
+@import 's_header';
+@import 'footer';
+
+#main{
+    width: 100%;
+    height: 600px;
+    .main_inner{
+        position: relative;
+        width: 100%; height: 700px;
+        margin: 0 auto;
+        padding: $mp50;
+        .video_box{
+            position: relative;
+            width: 100%; height: 100%;
+            margin:0 auto;
+            video{
+                width: 100%;height:100%;
+            }
+        }
+        .main_txt{
+            position: absolute;
+            bottom: 70px; left: 300px;
+            font-size: 3.1rem;
+            color:$white;
+            opacity: 0;
+        }
+        
+    }
+}
+//e.main
+
+#section1{
+    width: 100%;
+    margin-top: $set_margin;
+    .section1_inner{
+        width: 1200px;
+        margin: 0 auto;
+        .tab_h_box{
+            width: 95%;
+            margin: 0 auto;
+            .tab_h{
+                width: 100%;
+                height: 48px;
+                line-height: 48px;
+                margin: 0 auto;
+                display: flex;
+                li{
+                    width: 33%;
+                    margin-left: -5%;
+                    a{
+                        display: block;
+                        width: 100%;
+                        background: $white;
+                        border: 1px solid $pointColor;
+                        border-radius: 35px;
+                        text-align: center;
+                    }
+                    a.on{
+                        background: $pointColor;
+                        color:#fff;
+                    }
+                }
+                li:nth-child(1){
+                    margin-left: 0;
+                    z-index:4
+                }
+                li:nth-child(2){
+                    z-index:3
+                }
+                li:nth-child(3){
+                    z-index:2
+                }
+                li:nth-child(4){
+                    z-index:1
+                }
+            }
+        }
+        .tabG{
+            width: 100%;
+            margin-top: $set_margin;
+            .tab{
+                &>ul{position: relative;}
+                .tab1_7, .tab2_3{
+                    li{
+                        width:30%;
+                    }
+                }
+                ul{
+                    display: flex;
+                    margin-bottom:3%;
+                    li{
+                        width: 32%;
+                        height: 450px;
+                        margin-right:5%;
+
+                        .shop_img{overflow: hidden;}
+                        
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 300px;
+                            img{
+                                width: 100%;
+                                transition: all 1s;
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                            .prod_info{
+                                width: 100%;
+                                margin-top: 5%;
+                                p{
+                                    text-align: center;
+                                }
+                                .price{
+                                    margin-top: 3%;
+                                    span{
+                                        color: $gray3;
+                                        margin-right: 3%;
+                                        font-size: $footBasic14;
+                                    }
+                                }
+                            }
+                        }
+                        .badge{
+                            width: 120px;
+                            margin:35% auto;
+                            display: flex;
+                            dt{
+                                margin-right: 5%;
+                                width:60px;height:20px;
+                                background:url(../img/teashop/section1_tab_best.png) no-repeat 0 0;
+                            }
+                            dd{
+                                margin-right: 5%;
+                                width:50px;height:20px;
+                                background:url(../img/teashop/section1_tab_sale.png) no-repeat 0 0;
+                            }
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            div.on{display: block;}
+        }
+        
+    }
+}
+
+@media screen and (max-width:640px) {
+    #main{
+        width:100%;
+        height:300px;
+        .main_inner{
+            width:100%;height:300px;
+            padding: 0;
+            .video_box{
+                width:100%;height:300px;
+            }
+            .main_txt{display:none;}
+        }
+    }
+    #section1{
+        margin-top: $mp50;
+        .section1_inner{
+            width: 85%;
+            .tab_h_box{
+                width:100%;height:40px;
+                .tab_h{
+                    width:100%;
+                    height:100%;
+                    li{
+                        a{
+                            width:115%;
+                            height:100%;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+            .tabG{
+                .tab{
+                    &>ul{position: relative;}
+                    .tab1_7, .tab2_3{display:none;}
+                    ul{
+                        margin:3% auto;
+                        justify-content: space-between;
+                        li{
+                            width: 50%;
+                            height: auto;
+                            margin-bottom:15%;
+                            margin-right:5%;
+                            &:nth-child(2){margin-right:0;}
+                            &:nth-child(3){display:none;}
+                            
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                img{
+                                    width: 100%;
+                                    transition: all 1s;
+                                    &:hover{
+                                        transform: scale(1.1);
+                                    }
+                                }
+                                .prod_info{
+                                    width: 100%;
+                                    margin-top: 5%;
+                                    p{
+                                        text-align: center;
+                                    }
+                                    .price{
+                                        margin-top: 3%;
+                                        span{
+                                            margin-right: 0;
+                                            font-size: $footBasic14;
+                                        }
+                                    }
+                                }
+                            }
+                            .badge{
+                                display:none;
+                            }
+                        }
+                        li:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                div.on{display: block;}
+            }
+            
+        }
+        }
+    }
+

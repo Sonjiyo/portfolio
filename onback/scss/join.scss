@@ -1,0 +1,160 @@
+@import "reset";
+@import "root";
+@import "mixin";
+@import "color";
+@import "font";
+
+body{
+    background: $mainColor;
+}
+#header{
+    position: absolute; 
+    top: 11%; 
+    left: 50%; 
+    margin-left: -96px;
+}
+// e.header
+
+#section1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 530px;
+    margin-left: -265px;
+    button{
+        cursor: pointer;
+    }
+    .section1_information{
+        width: 530px;
+        .form{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .id, .pw1, .pw2, .email, .name{
+                width: 530px;
+                height: 43px;
+                margin-bottom: 1%;
+            }
+            input{
+                padding: 3% 4%;
+            }
+            .day{
+                width: 238px;
+                height: 43px;
+                margin-right: 1%;
+            }
+            .men{
+                display: inline-block;
+                width: 136px;
+                height: 43px;
+                margin-right: 1%;
+                background: $white;
+                text-align: center;
+                line-height: 43px;
+                color: #ccc;
+            }
+            .men.on{
+                background: $onBack2;
+                color: $white;
+            }
+            .women{
+                display: inline-block;
+                width: 136px;
+                height: 43px;
+                background: $onBack2;
+                text-align: center;
+                line-height: 43px;
+                color: $white;
+            }
+            .women.on{
+                background: $white;
+                color: #ccc;
+            }
+        }
+    }
+    .section1_check{
+        margin-top: 3%;
+        padding: 3%;
+        background: #fff;
+        input[type=checkbox]+label{
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            background: url(../img/join/section_check.png) no-repeat;
+        }
+        input[type=checkbox]:checked+label{
+            background: url(../img/join/section_check_click.png) no-repeat;
+        }
+        input[type=checkbox]{
+            display: none;
+        }
+        span{
+            color: #747171;
+        }
+        img{
+            margin-right: 1%;
+        }
+        ul{
+            padding-left: 5%;
+            border-top: 1px solid #e8e5e5;
+            li{
+                margin-top: 3%;
+                color: #4a4949;
+            }
+        }
+    }
+    .section1_btn{
+        display: flex;
+        justify-content: space-around;
+        width: 530px;
+        margin-top: 5%;
+        .join, .cancle{
+            width: 173px;
+            height: 46px;
+            border-radius: 3px;
+            background: $onBack2;
+            color: $white;
+            text-align: center;
+            line-height: 46px;
+        }
+    }
+}
+
+@media screen and (max-width:414px){
+    #section1{
+        margin-left: -173px;
+        width: 346px;
+        button{
+            cursor: pointer;
+        }
+        .section1_information{
+            width: 346px;
+            .form{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                .id, .pw1, .pw2, .email, .name{
+                    width: 346px;
+                }
+                input{
+                    padding: 3% 4%;
+                }
+                .day{
+                    width: 170px;
+                }
+                .men{
+                    width: 80px;
+                }
+                .women{
+                    width: 80px;
+                }
+            }
+        }
+        .section1_btn{
+            width: 346px;
+            .join, .cancle{
+                width: 140px;
+            }
+        }
+    }
+}

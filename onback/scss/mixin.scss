@@ -1,0 +1,161 @@
+@mixin bt1($wid: 117px, $ht: 29px, $radius:42px, $bgColor:rgba(0, 0, 0, .3), $color:rgba(255, 255, 255, .9), $hoverBg:#fff, $hoverColor: rgba(0, 0, 0, .3)){
+    display: block;
+    width: $wid; height: $ht; line-height: $ht;
+    background: $bgColor;
+    text-align: center;
+    border-radius: $radius;
+    &:hover{
+        background: $hoverBg;
+        color: $hoverColor;
+    }
+}
+
+@mixin bt2($wid: 117px, $ht: 29px, $radius:3px, $bgColor:#ff7a58, $color:#fff, $hoverBg:#fff, $hoverColor: #ff7a58){
+    display: block;
+    width: $wid; height: $ht; line-height: $ht;
+    background: $bgColor;
+    text-align: center;
+    border-radius: $radius;
+    &:hover{
+        background: $hoverBg;
+        color: $hoverColor;
+    }
+}
+
+@mixin bt3($wid: 117px, $ht: 29px, $radius:27px, $bgColor:#ff585c, $color:#fff, $hoverBg:#fff, $hoverColor: #ff585c){
+    display: block;
+    width: $wid; height: $ht; line-height: $ht;
+    background: $bgColor;
+    text-align: center;
+    border-radius: $radius;
+    &:hover{
+        background: $hoverBg;
+        color: $hoverColor;
+    }
+}
+
+@mixin bt4($wid: 117px, $ht: 29px, $radius:27px, $bgColor:#ff7a58, $color:#fff, $hoverBg:#fff, $hoverColor: #ff7a58){
+    display: block;
+    width: $wid; height: $ht; line-height: $ht;
+    background:$bgColor url(../img/onback_cup/section2_btn.png) no-repeat center right 10px;
+    text-align: center;
+    border-radius: $radius;
+    &:hover{
+        background:$white url(../img/onback_cup/section2_btn2.png) no-repeat center right 10px;
+        color: $hoverColor;
+        border:1px solid $mainTxtcolor;
+    }
+}
+
+/* teamachine */
+@mixin machineBg($wid: 900px, $ht: 800px){
+    width: $wid; height: $ht;
+}
+
+@mixin section3Txt($hSize, $pSize){
+    h1{
+        margin-bottom: $mp10;
+        @include size($hSize, $gray1);
+    }
+    p{
+        @include size($pSize, $gray1);
+    }
+}
+
+@mixin pos($pos, $top, $right, $bottom, $left){
+    position: $pos;
+    top: $top; bottom: $bottom;
+    left: $left; right: $right;
+}
+
+/* 16px base */
+@mixin size($fontSize, $fontColor){
+    font-size: ($fontSize/16) + rem;
+    color : $fontColor;
+}
+
+/* line hieght */
+@mixin lineHt($fontsize, $lineHt){
+    line-height: ($fontsize*$lineHt/16) + rem;
+}
+
+/* onback_cup */
+@mixin text_box(){
+    position:absolute;
+    width:500px;
+    h2{
+        padding:10px;margin-bottom: 5px;
+        font-weight: normal;
+        font-size:$mainSettitle38;
+        border-bottom:1px solid #707070;
+    }
+    .order{
+        margin-bottom: 10px;
+        font-size:$mainSub20;
+        line-height: $lh23;
+
+        li{
+            margin-top:10px;
+        }
+    }
+    .order_sub{
+        margin:10px 0 0 20px;
+        font-size:$set16;
+        color:#b3b3b3;
+
+        li{
+            margin-top:0px;
+        }
+    }
+}
+
+@mixin text_cc(){
+    position: absolute;
+    width:400px;height:400px;
+
+    h3{
+        position:absolute;
+        top:-10px;
+        width:120px;height:120px;
+        border-radius: 50%;
+        background:#fcddd6;
+        line-height:120px;
+        font-weight: normal;
+        font-size: $mainSub20;
+        text-align: center;
+    }
+    
+    p{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:400px;height:400px;
+        line-height:1.2em;
+        border-radius: 50%;
+        background:#f9bcac;
+        text-align: center;
+    }
+}
+
+@mixin bottom_text(){
+    position: relative;
+    font-size: $mainSettitle38;
+    
+    span{
+        position: absolute;
+        bottom:-30px;right:-30px;
+        width:280px;height:50px;
+        z-index: -10;
+    }
+}
+
+/* onback_detail */
+@mixin section(){
+    position: relative;
+    display:flex;
+    width:1200px;
+    margin:0 auto;
+    margin-top:$mp30;
+    margin-bottom: $set_margin;
+    justify-content: space-between;
+}

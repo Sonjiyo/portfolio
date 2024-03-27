@@ -1,0 +1,168 @@
+@import "reset";
+@import "root";
+@import "mixin";
+@import "color";
+@import "font";
+
+#header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: $main_width;
+    margin-top: 1%;
+    margin-left: 17%;
+    margin-bottom: 1%;
+    font-family: "NanumSquare_acR";
+    .logo{
+        width:144px;
+    }
+    .nav{
+        width: 61%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            margin: 0 auto;
+            align-items: center;
+            font-size: 1.125rem;
+            li{
+                margin-right: 1%;
+                &:hover a{
+                    color: $onBack2;
+                }
+                .brand{
+                    display: inline-block;
+                    width: 131px;
+                    height: 32px;
+                    padding-left: 10%;
+                    border: 1px solid $onBack1;
+                    border-radius: 15px;
+                    background: url(../img/common/header_shop_hover.png) no-repeat 93% 55%;
+                    font-size: 16px;
+                    color: $onBack1;
+                    line-height: 32px;
+                    &:hover{
+                        background: url(../img/common/header_shop.png) no-repeat 93% 55% $onBack2;
+                        border: 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .icon{
+        width: 8%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .menu_bar{
+        width:20px;height:20px;
+        display: none;
+        position: absolute;
+        top: 65%;
+        right: 10%;
+        cursor: pointer;
+        .top{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background: #000;
+        }
+        .middle1, .middle2, .middle3{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background: #000;
+            transition: all 1s;
+        }
+        .middle1.on{
+            transform: rotate(45deg) scale(1.5);
+        }
+        .middle3.on{
+            transform: rotate(-45deg) scale(1.5);
+        }
+        .bottom{
+            position: absolute;
+            top: 16px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background: #000;
+        }
+    }
+
+}
+
+@media screen and (max-width:640px){
+    #header{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        .logo img{
+            width: 144px;
+        }
+        .nav{
+            width:0;
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            top: 150%;
+            right:0px;
+            z-index: 100;
+            height: 71vh;
+            padding-top: 10%;
+            background: $mainColor;
+
+            ul{
+                flex-direction: column;
+
+                width: 85%;
+                li{
+                    margin-right: 0%;
+                    margin-bottom: 20%;
+                }
+            }
+        }
+        .menu_bar{
+            display: block;
+            position: absolute;
+            top: 55%;
+            right: 0%;
+            z-index: 10;
+            .top{
+                position: absolute;
+                top: 0px;
+                left: 0;
+                width: 20px;
+                height: 3px;
+                background: #000;
+            }
+            .middle1, .middle2, .middle3{
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 20px;
+                height: 3px;
+                background: #000;
+            }
+            .bottom{
+                position: absolute;
+                top: 16px;
+                left: 0;
+                width: 20px;
+                height: 3px;
+                background: #000;
+            }
+        }
+        .icon{margin-right: 25px; width: 17%;}
+    }
+}

@@ -1,0 +1,86 @@
+@import "reset";
+@import "root";
+@import "mixin";
+@import "color";
+@import "font";
+
+#footer{
+    width: 100%;
+    border-top: 1px solid $gray5;
+    padding: $mp30 0; 
+    .footer_wrap{
+        display: flex;
+        width: $main_width;
+        margin: 0 auto;
+        img{
+            width: 81px; height: 114px;
+        }
+        .footer_box1{
+            margin-left: 69px;
+            margin-right: 92px;
+            p{
+                @include size(17, $gray1);
+            }
+            h1{
+                @include size(38, $gray1);
+                font-weight: bold;
+                margin-bottom: 19px;
+            }
+            .box1_ul{
+                @include size(17, $gray1);
+                @include lineHt(17, 1.5);
+                li{
+                    span{
+                        display: inline-block;
+                        padding-left: 20px;
+                    }
+                    .gray{
+                        color: $gray4;
+                        padding-left:0;
+                    }
+                }
+            }
+        }
+        .footer_box2{
+            .box2_ul1{
+                display: flex;
+                justify-content: space-between;
+                @include size(18, $gray1);
+                font-weight: bold;
+                margin-bottom: $mp30;
+            }
+            .box2_ul2{
+                @include size(17, $gray1);
+                @include lineHt(17, 1.75);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:414px) and (max-width: 736px){
+    #footer{
+        .footer_wrap{
+            width: 90%;
+            flex-direction: column;
+            img{display: none;}
+            .footer_box1{
+                width: 100%;
+                margin-bottom: $mp30;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+            .footer_box2{
+                width: 100%;
+                text-align: center;
+                .box2_ul1{
+                    @include size(15, $gray1);
+                }
+                .box2_ul2{
+                    @include size(15, $gray1);
+                }
+            }
+        }
+    }
+}

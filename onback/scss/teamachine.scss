@@ -1,0 +1,403 @@
+@import 'reset';
+@import 'root';
+@import 'font';
+@import 'mixin';
+@import 'color';
+@import 's_header';
+@import 'footer';
+
+#section1{
+    position: relative;
+    overflow: hidden;
+    width: 100%; height: 450px;
+    background: url("../img/teamachine/section1_banner_bg.png") 0 0 no-repeat;
+    p{
+        @include pos(absolute, 14%, none, none, 25%);
+        @include size(74, $white);
+        @include lineHt(74, 1.25);
+        opacity: 0;
+        z-index: 20;
+    }
+    img{
+        @include pos(absolute, none, 10%, none, none);
+        z-index: 10;
+    }
+}
+/* e.section1 */
+
+#section2{
+    width: 100%; height: auto;
+    margin-top: $mp300;
+    .section2_img{
+        position: relative;
+        width: 800px; height: 460px;
+        margin: 0 auto;
+        text-align: center;
+        .size1{
+            @include pos(absolute, 2px, -50px, none, none);
+            opacity: 0;
+        }
+        .size2{
+            @include pos(absolute, none, none, -50px, 90px);
+            opacity: 0;
+        }
+    }
+    /* e.section2_img*/
+
+    .section2_text{
+        position: relative;
+        width: 100%;
+        margin-top: $mp300;
+        opacity: 0;
+        ul{
+            width: 436px; height: 270px;
+            margin: 0 auto;
+            li{
+                width: 100%; height: 45px;
+                line-height: 45px;
+                padding-left: $mp40;
+                @include size(20, $gray1);
+                border-bottom: 1px solid $gray2;
+                span{
+                    width: 218px;
+                    float: right;
+                    padding-left: $mp40;
+                    color: $gray4;
+                }
+            }
+        }
+    }
+    /* e.section2_text*/
+}
+/* e.section2 */
+
+#section3{
+    width: 1200px; height: auto;
+    margin: 0 auto;
+    margin-top: $mp300;
+    .section3_box1{
+        @include pos(relative, none, none, none, 50%);
+        @include machineBg();
+        margin-left: -$mp300;
+        background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat;
+        .water1{
+            @include pos(absolute, none, none, 94px, none);
+            z-index: 990;
+        }
+        .water2{
+            @include pos(absolute, none, none, 120px, 142px);
+            z-index: 1000;
+        }
+        .section3_text1{
+            @include pos(absolute, none, 0, 200px, none);
+            text-align: right;
+            @include section3Txt(50, 35);
+            opacity: 0;
+        }
+    }
+    /* e.section3_box1 */ 
+
+    .section3_box2{
+        @include pos(relative, -147px, none, none, 50%);
+        margin-left: -$mp300*2;
+        @include machineBg();
+        background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+        z-index: 980;
+        .capbox1{
+            @include pos(absolute, none, 0, 112px, none);
+        }
+        .capbox2{
+            @include pos(absolute, none, 226px, 0, none);
+        }
+        .section3_text2{
+            @include pos(absolute, 212px, none, none, 0);
+            @include section3Txt(50, 35);
+            opacity: 0;
+        }
+    }
+    /* e.section3_box2 */ 
+
+    .section3_box3{
+        @include pos(relative, -289px, none, none, 50%);
+        margin-left: -$mp300;
+        @include machineBg();
+        background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat;
+        .prop1{
+            @include pos(absolute, none, none, -59px, none);
+            z-index: 970;
+        }
+        .prop2{
+            @include pos(absolute, none, none, 0, 153px);
+            z-index: 970;
+        }
+        .section3_text3{
+            @include pos(absolute, 200px, 146px, none, none);
+            text-align: right;
+            @include section3Txt(50, 35);
+            opacity: 0;
+        }
+    }
+    /* e.section3_box3 */ 
+
+    .section3_box4{
+        @include pos(relative, -403px, none, none, 50%);
+        overflow: hidden;
+        margin-left: -$mp300*2;
+        @include machineBg();
+        background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+        z-index: 960;
+        .cover{
+            @include pos(absolute, none, -100px, -100px, none);
+            transform: scale(0.8);
+        }
+        .cover.act2{
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 2s ease-in-out;
+        }
+        .section3_text4{
+            @include pos(absolute, 271px, none, none, 0);
+            @include section3Txt(50, 35);
+            opacity: 0;
+        }
+    }
+    /* e.section3_box4 */ 
+}
+/* e.section3 */
+
+#section4{
+    width: 100%; height: 467px;
+    margin-top: $mp300;
+    .section4_box{
+        position: relative;
+        width: 1200px; height: 176px;
+        margin: 0 auto;
+        background: url("../img/teamachine/section4_bg.png") center no-repeat;
+        z-index: 900;
+        .capsuleSzie1{
+            @include pos(absolute, none, none, 300px, 63px);
+        }
+        .capsule1{
+            @include pos(absolute, none, none, 40px, 167px);
+            opacity: 0;
+        }
+        .capsule2{
+            @include pos(absolute, 33px, 167px, none, none);
+            opacity: 0;
+        }
+        .capsuleSzie2{
+            @include pos(absolute, -22px, 63px, none, none);
+        }
+        span{
+            @include pos(absolute, none, none, -44px, -100px);
+            @include size(20, $gray4);
+            opacity: 0;
+        }
+        .hidden{display: none;}
+    }
+}
+/* e.section4 */
+
+#section5{
+    width: 100%;
+    margin-top: $mp450;
+    margin-bottom: $mp300;
+    .section5_box{
+        position: relative;
+        width: 750px; height: 458px;
+        margin: 0 auto;
+        border: 1px solid $onBack1;
+        .teaBox1{
+            @include pos(absolute, -252px, none, none, -230px);
+            opacity: 0;
+        }
+        span{
+            @include pos(absolute, 30px, 30px, none, none);
+            @include size(20, $gray4);
+            @include lineHt(20, 1.5);
+            text-align: right;
+        }
+        .teaBox2{
+            @include pos(absolute, none, -120px, -104px, none);
+            opacity: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:414px) and (max-width: 723px){
+    #section1{
+        p{
+            @include pos(absolute, 16%, none, none, 5%);
+            @include size(40, $white);
+            @include lineHt(40, 1.25);
+            color: #444;
+        }
+        img{
+            width: 70%;
+            @include pos(absolute, none, -1%, 0, none);
+        }
+    }
+    /* e.section1 */
+
+    #section2{
+        margin: 0 auto;
+        margin-top: $mp150;
+        .section2_img{
+            width: 90%;
+            margin: 0 auto;
+            .teamachine{width: 100%;}
+            .size1{display: none;}
+            .size2{display: none;}
+        }
+        .section2_text{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: $mp50;
+            ul{
+                width: 100%;
+            }
+        }
+    }
+    /* e.section2*/
+
+    #section3{
+        overflow: hidden;
+        width: 100%;
+        margin-top: $mp100;
+        .section3_box1{
+            @include pos(relative, none, none, none, 0);
+            @include machineBg($wid: 100%, $ht: 600px);
+            margin-left: 0;
+            background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat;
+            .water1{
+                width: 45%;
+            }
+            .water2{
+                width: 20%;
+            }
+            .section3_text1{
+                @include section3Txt(35, 20);
+            }
+        }
+        /* e.section3_box1 */ 
+
+        .section3_box2{
+            @include pos(relative, none, none, none, 0);
+            @include machineBg($wid: 100%, $ht: 600px);
+            margin-left: 0;
+            background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+            .capbox1{
+                width: 40%;
+                @include pos(absolute, none, 0, 70px, none);
+            }
+            .capbox2{
+                width: 40%;
+                @include pos(absolute, none, 150px, 0, none);
+            }
+            .section3_text2{
+                @include pos(absolute, 150px, none, none, 0);
+                @include section3Txt(35, 20);
+            }
+        }
+        /* e.section3_box2 */ 
+
+        .section3_box3{
+            @include pos(relative, none, none, none, 0);
+            @include machineBg($wid: 100%, $ht: 600px);
+            margin-left: 0;
+            background: url("../img/teamachine/section3_bg_1.png") 0 0 no-repeat;
+            .prop1{
+                width: 45%;
+                @include pos(absolute, none, none, -40px, none);
+                z-index: 970;
+            }
+            .prop2{
+                width: 20%;
+                @include pos(absolute, none, none, 0, 85px);
+                z-index: 970;
+            }
+            .section3_text3{
+                @include section3Txt(35, 20);
+                z-index: 1000;
+            }
+        }
+        /* e.section3_box3 */ 
+
+        .section3_box4{
+            // @include pos(relative, -403px, none, none, 50%);
+            @include pos(relative, -289px, none, none, 0);
+            @include machineBg($wid: 100%, $ht: 600px);
+            margin-left: 0;
+            background: url("../img/teamachine/section3_bg_2.png") 0 0 no-repeat;
+            .cover{
+                @include pos(absolute, none, -150px, -150px, none);
+                transform: scale(0.8);
+            }
+            .cover.act2{
+                overflow: hidden;
+                transform: scale(1);
+                transition: transform 2s ease-in-out;
+            }
+            .section3_text4{
+                @include pos(absolute, 115px, none, none, 0);
+                @include section3Txt(35, 20);
+            }
+        }
+        /* e.section3_box4 */ 
+    }
+    /* e.section3 */
+
+    #section4{
+        margin-top: $mp100;
+        .section4_box{
+            width: 100%;
+            .capsuleSzie1{display: none;}
+            .capsule1{
+                @include pos(absolute, none, none, 0, 50%);
+                margin-left: -217px;
+                opacity: 0;
+            }
+            .capsule2{display: none;}
+            .capsuleSzie2{display: none;}
+            span{
+                @include pos(absolute, none, none, -44px, -100px);
+                padding-left: 20px;
+                @include size(20, $gray4);
+                opacity: 0;
+            }
+            .hidden{display: block;}
+        }
+    }
+    /* e.section4 */
+
+    #section5{
+        margin-top: $mp200;
+        margin-bottom: $mp200;
+        .section5_box{
+            width: 90%; height: 458px;
+            .teaBox1{
+                width: 280px;
+                @include pos(absolute, 150px, none, none, -230px);
+                margin-left: 235px;
+            }
+            span{
+                @include pos(absolute, 30px, 30px, none, none);
+                @include size(20, $gray4);
+                @include lineHt(20, 1.5);
+                text-align: right;
+            }
+            .teaBox2{display: none;}
+        }
+    }
+    /* e.section5 */
+}
